@@ -11,9 +11,9 @@ a {
 
 /*clearfixを追加*/
 .clearfix::after {
- content: "";
- display: block;
- clear: both;
+  content: "";
+  display: block;
+  clear: both;
 }
 
 header {
@@ -23,7 +23,7 @@ header {
   text-align: center;
 }
 /* headerタグ内のheadlineクラスにのみ反映される */
-header .hadline {
+header .headline {
   font-size: 32px;
 }
 .nav-list {
@@ -40,12 +40,24 @@ header .hadline {
 .main-visual {
   width: 100%; /*横幅*/
   height: 300px; /*高さ*/
-  }
+  background-image: url(img/mv.jpg);
+  background-size: cover;
+  background-position: center;
+}
 .main-visual-content {
-  width: 350px; /*横幅を指定*/
+  width: 40%; /*横幅を指定*/
   height: 300px; /*親の高さに揃える*/
+  background-color: rgba( 0, 0, 0, 0.5);
+  text-align: center;
+  padding-top: 105px;
   }
-
+.main-visual-text {
+	color: #fff;
+}
+.main-visual-name {
+	margin-top: 30px;
+	color: #fff;
+}
 .main {
   width: 840px; /*横幅*/
   /*中央寄せ（余白がないとできない）*/
